@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F405BC261B1EB019004C573A /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405BC251B1EB019004C573A /* SampleData.swift */; };
+		F405BC281B1EB031004C573A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405BC271B1EB031004C573A /* CustomCell.swift */; };
+		F40B97971B8E75D500E00F22 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40B97961B8E75D500E00F22 /* Monster.swift */; };
+		F418D86A1B87A7EC009FE4E1 /* ListeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F418D8691B87A7EC009FE4E1 /* ListeViewController.swift */; };
+		F47B454C1BA8B6860074D10F /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47B454B1BA8B6860074D10F /* AddEditViewController.swift */; };
+		F4B166E01B1E53E800C4D8AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B166DF1B1E53E800C4D8AA /* AppDelegate.swift */; };
+		F4B166E21B1E53E800C4D8AA /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B166E11B1E53E800C4D8AA /* MasterViewController.swift */; };
+		F4B166E41B1E53E800C4D8AA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B166E31B1E53E800C4D8AA /* DetailViewController.swift */; };
+		F4B166E71B1E53E800C4D8AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B166E51B1E53E800C4D8AA /* Main.storyboard */; };
+		F4B166EC1B1E53E800C4D8AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B166EA1B1E53E800C4D8AA /* LaunchScreen.xib */; };
+		F4B166F81B1E53E800C4D8AA /* MontrealPoutineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B166F71B1E53E800C4D8AA /* MontrealPoutineTests.swift */; };
+		F4B167021B1E543A00C4D8AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B167011B1E543A00C4D8AA /* Images.xcassets */; };
+		F4B167081B1E546900C4D8AA /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B167041B1E546900C4D8AA /* Util.swift */; };
+		F4B167091B1E546900C4D8AA /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B167051B1E546900C4D8AA /* ModelManager.swift */; };
+		F4B1670A1B1E546900C4D8AA /* EntiteeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B167061B1E546900C4D8AA /* EntiteeItem.swift */; };
+		F4B1670E1B1E54D200C4D8AA /* FloatRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B1670D1B1E54D200C4D8AA /* FloatRatingView.swift */; };
+		F4B167821B1E595200C4D8AA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B167781B1E595200C4D8AA /* FMDatabase.m */; };
+		F4B167831B1E595200C4D8AA /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B1677A1B1E595200C4D8AA /* FMDatabaseAdditions.m */; };
+		F4B167841B1E595200C4D8AA /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B1677C1B1E595200C4D8AA /* FMDatabasePool.m */; };
+		F4B167851B1E595200C4D8AA /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B1677E1B1E595200C4D8AA /* FMDatabaseQueue.m */; };
+		F4B167861B1E595200C4D8AA /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B167811B1E595200C4D8AA /* FMResultSet.m */; };
+		F4C1EB481BAB4D020044B4C7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C1EB471BAB4D020044B4C7 /* libsqlite3.tbd */; };
+		F4C1EB901BABAB6F0044B4C7 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1EB8F1BABAB6F0044B4C7 /* InstructionsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		F4E825BF1B3CD32B003A5CCE /* masterViewControllerSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E825BE1B3CD32B003A5CCE /* masterViewControllerSearch.swift */; };
+		F4F577351B5844BD0079131E /* MTL_poutine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F4F577341B5844BD0079131E /* MTL_poutine.sqlite */; };
+		F4F5776F1B60832D0079131E /* masterViewControllerSearchDispCont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5776E1B60832D0079131E /* masterViewControllerSearchDispCont.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4B166F21B1E53E800C4D8AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4B166D21B1E53E800C4D8AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4B166D91B1E53E800C4D8AA;
+			remoteInfo = MontrealPoutine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F405BC251B1EB019004C573A /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		F405BC271B1EB031004C573A /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		F40B97961B8E75D500E00F22 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		F418D8691B87A7EC009FE4E1 /* ListeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListeViewController.swift; sourceTree = "<group>"; };
+		F47B454B1BA8B6860074D10F /* AddEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
+		F4B166DA1B1E53E800C4D8AA /* MontrealPoutine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MontrealPoutine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B166DE1B1E53E800C4D8AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4B166DF1B1E53E800C4D8AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4B166E11B1E53E800C4D8AA /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		F4B166E31B1E53E800C4D8AA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F4B166E61B1E53E800C4D8AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4B166EB1B1E53E800C4D8AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F4B166F11B1E53E800C4D8AA /* MontrealPoutineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MontrealPoutineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B166F61B1E53E800C4D8AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4B166F71B1E53E800C4D8AA /* MontrealPoutineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontrealPoutineTests.swift; sourceTree = "<group>"; };
+		F4B167011B1E543A00C4D8AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F4B167041B1E546900C4D8AA /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		F4B167051B1E546900C4D8AA /* ModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		F4B167061B1E546900C4D8AA /* EntiteeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntiteeItem.swift; sourceTree = "<group>"; };
+		F4B1670D1B1E54D200C4D8AA /* FloatRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatRatingView.swift; sourceTree = "<group>"; };
+		F4B167771B1E595200C4D8AA /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		F4B167781B1E595200C4D8AA /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		F4B167791B1E595200C4D8AA /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		F4B1677A1B1E595200C4D8AA /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		F4B1677B1B1E595200C4D8AA /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		F4B1677C1B1E595200C4D8AA /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		F4B1677D1B1E595200C4D8AA /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		F4B1677E1B1E595200C4D8AA /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		F4B1677F1B1E595200C4D8AA /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = fmdb/FMDB.h; sourceTree = "<group>"; };
+		F4B167801B1E595200C4D8AA /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		F4B167811B1E595200C4D8AA /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		F4B167871B1E599000C4D8AA /* MontrealPoutine-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MontrealPoutine-Bridging-Header.h"; sourceTree = "<group>"; };
+		F4C1EB471BAB4D020044B4C7 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F4C1EB8F1BABAB6F0044B4C7 /* InstructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
+		F4E825BE1B3CD32B003A5CCE /* masterViewControllerSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = masterViewControllerSearch.swift; sourceTree = "<group>"; };
+		F4F577341B5844BD0079131E /* MTL_poutine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = MTL_poutine.sqlite; sourceTree = "<group>"; };
+		F4F5776E1B60832D0079131E /* masterViewControllerSearchDispCont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = masterViewControllerSearchDispCont.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4B166D71B1E53E800C4D8AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C1EB481BAB4D020044B4C7 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B166EE1B1E53E800C4D8AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4B166D11B1E53E800C4D8AA = {
+			isa = PBXGroup;
+			children = (
+				F4B166DC1B1E53E800C4D8AA /* MontrealPoutine */,
+				F4B166F41B1E53E800C4D8AA /* MontrealPoutineTests */,
+				F4B166DB1B1E53E800C4D8AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4B166DB1B1E53E800C4D8AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4B166DA1B1E53E800C4D8AA /* MontrealPoutine.app */,
+				F4B166F11B1E53E800C4D8AA /* MontrealPoutineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4B166DC1B1E53E800C4D8AA /* MontrealPoutine */ = {
+			isa = PBXGroup;
+			children = (
+				F4C1EB471BAB4D020044B4C7 /* libsqlite3.tbd */,
+				F418D8691B87A7EC009FE4E1 /* ListeViewController.swift */,
+				F4B166E31B1E53E800C4D8AA /* DetailViewController.swift */,
+				F47B454B1BA8B6860074D10F /* AddEditViewController.swift */,
+				F4C1EB8F1BABAB6F0044B4C7 /* InstructionsViewController.swift */,
+				F40B97961B8E75D500E00F22 /* Monster.swift */,
+				F4B166DF1B1E53E800C4D8AA /* AppDelegate.swift */,
+				F4B166E51B1E53E800C4D8AA /* Main.storyboard */,
+				F4B167871B1E599000C4D8AA /* MontrealPoutine-Bridging-Header.h */,
+				F4E825BE1B3CD32B003A5CCE /* masterViewControllerSearch.swift */,
+				F4F5776E1B60832D0079131E /* masterViewControllerSearchDispCont.swift */,
+				F4B166E11B1E53E800C4D8AA /* MasterViewController.swift */,
+				F4B167761B1E590200C4D8AA /* fmdb */,
+				F4B167011B1E543A00C4D8AA /* Images.xcassets */,
+				F4B166EA1B1E53E800C4D8AA /* LaunchScreen.xib */,
+				F405BC251B1EB019004C573A /* SampleData.swift */,
+				F405BC271B1EB031004C573A /* CustomCell.swift */,
+				F4B1670F1B1E54DF00C4D8AA /* FloatRatingView */,
+				F4B1670C1B1E547200C4D8AA /* Model */,
+				F4B166DD1B1E53E800C4D8AA /* Supporting Files */,
+			);
+			path = MontrealPoutine;
+			sourceTree = "<group>";
+		};
+		F4B166DD1B1E53E800C4D8AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4B166DE1B1E53E800C4D8AA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4B166F41B1E53E800C4D8AA /* MontrealPoutineTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4B166F71B1E53E800C4D8AA /* MontrealPoutineTests.swift */,
+				F4B166F51B1E53E800C4D8AA /* Supporting Files */,
+			);
+			path = MontrealPoutineTests;
+			sourceTree = "<group>";
+		};
+		F4B166F51B1E53E800C4D8AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4B166F61B1E53E800C4D8AA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4B1670C1B1E547200C4D8AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4B167041B1E546900C4D8AA /* Util.swift */,
+				F4B167051B1E546900C4D8AA /* ModelManager.swift */,
+				F4B167061B1E546900C4D8AA /* EntiteeItem.swift */,
+				F4F577341B5844BD0079131E /* MTL_poutine.sqlite */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F4B1670F1B1E54DF00C4D8AA /* FloatRatingView */ = {
+			isa = PBXGroup;
+			children = (
+				F4B1670D1B1E54D200C4D8AA /* FloatRatingView.swift */,
+			);
+			name = FloatRatingView;
+			sourceTree = "<group>";
+		};
+		F4B167761B1E590200C4D8AA /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				F4B167771B1E595200C4D8AA /* FMDatabase.h */,
+				F4B167781B1E595200C4D8AA /* FMDatabase.m */,
+				F4B167791B1E595200C4D8AA /* FMDatabaseAdditions.h */,
+				F4B1677A1B1E595200C4D8AA /* FMDatabaseAdditions.m */,
+				F4B1677B1B1E595200C4D8AA /* FMDatabasePool.h */,
+				F4B1677C1B1E595200C4D8AA /* FMDatabasePool.m */,
+				F4B1677D1B1E595200C4D8AA /* FMDatabaseQueue.h */,
+				F4B1677E1B1E595200C4D8AA /* FMDatabaseQueue.m */,
+				F4B1677F1B1E595200C4D8AA /* FMDB.h */,
+				F4B167801B1E595200C4D8AA /* FMResultSet.h */,
+				F4B167811B1E595200C4D8AA /* FMResultSet.m */,
+			);
+			name = fmdb;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4B166D91B1E53E800C4D8AA /* MontrealPoutine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B166FB1B1E53E800C4D8AA /* Build configuration list for PBXNativeTarget "MontrealPoutine" */;
+			buildPhases = (
+				F4B166D61B1E53E800C4D8AA /* Sources */,
+				F4B166D71B1E53E800C4D8AA /* Frameworks */,
+				F4B166D81B1E53E800C4D8AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MontrealPoutine;
+			productName = MontrealPoutine;
+			productReference = F4B166DA1B1E53E800C4D8AA /* MontrealPoutine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4B166F01B1E53E800C4D8AA /* MontrealPoutineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B166FE1B1E53E800C4D8AA /* Build configuration list for PBXNativeTarget "MontrealPoutineTests" */;
+			buildPhases = (
+				F4B166ED1B1E53E800C4D8AA /* Sources */,
+				F4B166EE1B1E53E800C4D8AA /* Frameworks */,
+				F4B166EF1B1E53E800C4D8AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4B166F31B1E53E800C4D8AA /* PBXTargetDependency */,
+			);
+			name = MontrealPoutineTests;
+			productName = MontrealPoutineTests;
+			productReference = F4B166F11B1E53E800C4D8AA /* MontrealPoutineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4B166D21B1E53E800C4D8AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Jean-Guy Bergeron";
+				TargetAttributes = {
+					F4B166D91B1E53E800C4D8AA = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = XUTST3SSC4;
+					};
+					F4B166F01B1E53E800C4D8AA = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = F4B166D91B1E53E800C4D8AA;
+					};
+				};
+			};
+			buildConfigurationList = F4B166D51B1E53E800C4D8AA /* Build configuration list for PBXProject "MontrealPoutine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4B166D11B1E53E800C4D8AA;
+			productRefGroup = F4B166DB1B1E53E800C4D8AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4B166D91B1E53E800C4D8AA /* MontrealPoutine */,
+				F4B166F01B1E53E800C4D8AA /* MontrealPoutineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4B166D81B1E53E800C4D8AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B167021B1E543A00C4D8AA /* Images.xcassets in Resources */,
+				F4B166E71B1E53E800C4D8AA /* Main.storyboard in Resources */,
+				F4F577351B5844BD0079131E /* MTL_poutine.sqlite in Resources */,
+				F4B166EC1B1E53E800C4D8AA /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B166EF1B1E53E800C4D8AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4B166D61B1E53E800C4D8AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B166E41B1E53E800C4D8AA /* DetailViewController.swift in Sources */,
+				F4B166E21B1E53E800C4D8AA /* MasterViewController.swift in Sources */,
+				F47B454C1BA8B6860074D10F /* AddEditViewController.swift in Sources */,
+				F4B1670E1B1E54D200C4D8AA /* FloatRatingView.swift in Sources */,
+				F4B167091B1E546900C4D8AA /* ModelManager.swift in Sources */,
+				F4B166E01B1E53E800C4D8AA /* AppDelegate.swift in Sources */,
+				F4B167831B1E595200C4D8AA /* FMDatabaseAdditions.m in Sources */,
+				F4B167861B1E595200C4D8AA /* FMResultSet.m in Sources */,
+				F405BC261B1EB019004C573A /* SampleData.swift in Sources */,
+				F4F5776F1B60832D0079131E /* masterViewControllerSearchDispCont.swift in Sources */,
+				F4B167081B1E546900C4D8AA /* Util.swift in Sources */,
+				F40B97971B8E75D500E00F22 /* Monster.swift in Sources */,
+				F4B167841B1E595200C4D8AA /* FMDatabasePool.m in Sources */,
+				F4B167851B1E595200C4D8AA /* FMDatabaseQueue.m in Sources */,
+				F4C1EB901BABAB6F0044B4C7 /* InstructionsViewController.swift in Sources */,
+				F4B1670A1B1E546900C4D8AA /* EntiteeItem.swift in Sources */,
+				F418D86A1B87A7EC009FE4E1 /* ListeViewController.swift in Sources */,
+				F4E825BF1B3CD32B003A5CCE /* masterViewControllerSearch.swift in Sources */,
+				F405BC281B1EB031004C573A /* CustomCell.swift in Sources */,
+				F4B167821B1E595200C4D8AA /* FMDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B166ED1B1E53E800C4D8AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B166F81B1E53E800C4D8AA /* MontrealPoutineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4B166F31B1E53E800C4D8AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4B166D91B1E53E800C4D8AA /* MontrealPoutine */;
+			targetProxy = F4B166F21B1E53E800C4D8AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4B166E51B1E53E800C4D8AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4B166E61B1E53E800C4D8AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4B166EA1B1E53E800C4D8AA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4B166EB1B1E53E800C4D8AA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4B166F91B1E53E800C4D8AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4B166FA1B1E53E800C4D8AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4B166FC1B1E53E800C4D8AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MontrealPoutine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.monkturbopou.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MontrealPoutine/MontrealPoutine-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4B166FD1B1E53E800C4D8AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MontrealPoutine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.monkturbopou.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MontrealPoutine/MontrealPoutine-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		F4B166FF1B1E53E800C4D8AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MontrealPoutineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.monkturbopou.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MontrealPoutine.app/MontrealPoutine";
+			};
+			name = Debug;
+		};
+		F4B167001B1E53E800C4D8AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MontrealPoutineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.monkturbopou.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MontrealPoutine.app/MontrealPoutine";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4B166D51B1E53E800C4D8AA /* Build configuration list for PBXProject "MontrealPoutine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B166F91B1E53E800C4D8AA /* Debug */,
+				F4B166FA1B1E53E800C4D8AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4B166FB1B1E53E800C4D8AA /* Build configuration list for PBXNativeTarget "MontrealPoutine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B166FC1B1E53E800C4D8AA /* Debug */,
+				F4B166FD1B1E53E800C4D8AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4B166FE1B1E53E800C4D8AA /* Build configuration list for PBXNativeTarget "MontrealPoutineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B166FF1B1E53E800C4D8AA /* Debug */,
+				F4B167001B1E53E800C4D8AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4B166D21B1E53E800C4D8AA /* Project object */;
+}
